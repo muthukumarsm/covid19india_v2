@@ -1,0 +1,16 @@
+{
+  "name": "covidindia_addl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "CovidIndia_Death_Recoveries.js",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://muthukumarsm.github.io/covid19india_v2",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
