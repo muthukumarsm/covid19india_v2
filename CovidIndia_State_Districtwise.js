@@ -17,10 +17,30 @@
             alias: "Confirmed",
             dataType: tableau.dataTypeEnum.int
         },{
+            id: "active",
+            alias: "active",
+            dataType: tableau.dataTypeEnum.int
+        },{
+            id: "deceased",
+            alias: "deceased",
+            dataType: tableau.dataTypeEnum.int
+        },{
+            id: "recovered",
+            alias: "recovered",
+            dataType: tableau.dataTypeEnum.int
+        },{
             id: "deltaconfirmed",
             alias: "DeltaConfirmed",
             dataType: tableau.dataTypeEnum.int
-        }        
+        },{
+            id: "deltadeceased",
+            alias: "deltadeceased",
+            dataType: tableau.dataTypeEnum.int
+        },{
+            id: "deltarecovered",
+            alias: "deltarecovered",
+            dataType: tableau.dataTypeEnum.int
+        },        
         ];
 
         var tableSchema = {
@@ -55,7 +75,12 @@
                         "state": statevalue,                
                         "district" : districtdata[k].district,
                         "confirmed": districtdata[k].confirmed,
-                        "deltaconfirmed":districtdata[k].delta.confirmed                   
+                        "active":districtdata[k].active,
+                        "deceased":districtdata[k].deceased,
+                        "recovered": districtdata[k].recovered,
+                        "deltaconfirmed":districtdata[k].delta.confirmed,
+                        "deltadeceased":districtdata[k].delta.deceased,
+                        "deltarecovered": districtdata[k].delta.recovered
                     });
                 }
             } 
